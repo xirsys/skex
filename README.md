@@ -1,9 +1,9 @@
 # Skex
 
 ## Overview
-_Skex_ is a NIF wrapper around Skein hashing functions.  It is a port of the Erlang Skerl library, by Basho.
+*Skex* is a NIF wrapper around Skein hashing functions.  It is a port of the Erlang Skerl library, by Basho.
 
-   Hash a binary by calling =Skex.hash/2= with the desired number of
+   Hash a binary by calling *Skex.hash/2* with the desired number of
    bits for the resulting hash:
 
 ```elixir
@@ -19,7 +19,7 @@ _Skex_ is a NIF wrapper around Skein hashing functions.  It is a port of the Erl
 256
 ```
 
-   You may find =Skex.hexhash/2= more useful, as it returns a
+   You may find *Skex.hexhash/2* more useful, as it returns a
    hexadecimal-encoded string representing the hash:
 
 ```elixir
@@ -65,9 +65,9 @@ The [[http://www.skein-hash.info/][official Skein page]] uses the headline:
 Fast, Secure, Simple, Flexible, Efficient. And it rhymes with "rain."
 
 ** Contributing
-   We encourage contributions to =skex= from the community.
+   We encourage contributions to *Skex* from the community.
 
-   1) Fork the =Skex= repository on [[https://github.com/xirsys/skex][Github]].
+   1) Fork the *Skex* repository on [[https://github.com/xirsys/skex][Github]].
    2) Clone your fork or add the remote if you already have a clone of
       the repository.
 ```shell
