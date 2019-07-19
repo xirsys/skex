@@ -7,15 +7,15 @@
    bits for the resulting hash:
 
 ```elixir
-1> bits = 256
+iex> bits = 256
 256
-2> data = "foobarbazquux"
+iex> data = "foobarbazquux"
 <<"foobarbazquux">>
-3> {:ok, hash} = Skex.hash(bits, data)
+iex> {:ok, hash} = Skex.hash(bits, data)
 {:ok,<<206,36,175,108,168,91,124,11,181,108,144,164,36,
       216,130,110,241,197,98,180,65,120,56,225,1,255,54,
       ...>>}
-4> bit_size(hash)
+iex> bit_size(hash)
 256
 ```
 
@@ -23,7 +23,7 @@
    hexadecimal-encoded string representing the hash:
 
 ```elixir
-5> hex_hash = Skex.hexhash(bits, data)      
+iex> hex_hash = Skex.hexhash(bits, data)      
 <<"ce24af6ca85b7c0bb56c90a424d8826ef1c562b4417838e101ff3627dcc000bc">>
 ```
 
