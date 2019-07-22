@@ -63,7 +63,7 @@ The [official Skein page](http://www.skein-hash.info/) uses the headline:
 
 Fast, Secure, Simple, Flexible, Efficient. And it rhymes with "rain."
 
-##Contributing
+## Contributing
 
 We encourage contributions to *Skex* from the community.
 
