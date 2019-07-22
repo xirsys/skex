@@ -63,8 +63,9 @@ The [official Skein page](http://www.skein-hash.info/) uses the headline:
 
 Fast, Secure, Simple, Flexible, Efficient. And it rhymes with "rain."
 
-** Contributing
-   We encourage contributions to *Skex* from the community.
+##Contributing
+
+We encourage contributions to *Skex* from the community.
 
 1) Fork the *Skex* repository on [Github](https://github.com/xirsys/skex).
 2) Clone your fork or add the remote if you already have a clone of the repository.
