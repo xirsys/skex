@@ -27,7 +27,7 @@ iex> hex_hash = Skex.hexhash(bits, data)
 <<"ce24af6ca85b7c0bb56c90a424d8826ef1c562b4417838e101ff3627dcc000bc">>
 ```
 
-Documentation for this repo can be found [https://hexdocs.pm/skex/readme.html](here)
+Documentation for this repo can be found [here](https://hexdocs.pm/skex/readme.html)
 
 
 ## Installation
@@ -47,26 +47,26 @@ end
 The underlying hashing code in Skex is the reference implementation
 of Skein from the official NIST submission.
 
-Skein is a [http://csrc.nist.gov/groups/ST/hash/sha-3/Round3/submissions_rnd3.html](finalist candidate in the NIST competition to become SHA-3).
+Skein is a [finalist candidate in the NIST competition to become SHA-3](http://csrc.nist.gov/groups/ST/hash/sha-3/Round3/submissions_rnd3.html).
 
 It is a hash function designed by 
 Niels Ferguson, Stefan Lucks, Bruce Schneier, Doug Whiting, Mihir
 Bellare, Tadayoshi Kohno, Jon Callas, and Jesse Walker.
 
 Details on the algorithm as submitted and known analysis can be found
-at [http://ehash.iaik.tugraz.at/wiki/Skein](ecrypt).
+at [ecrypt](http://ehash.iaik.tugraz.at/wiki/Skein).
 
-A [http://www.schneier.com/skein1.3.pdf](full paper on Skein)
+A [full paper on Skein](http://www.schneier.com/skein1.3.pdf)
 by the designers has been published.
 
-The [http://www.skein-hash.info/](official Skein page) uses the headline:
+The [official Skein page](http://www.skein-hash.info/) uses the headline:
 
 Fast, Secure, Simple, Flexible, Efficient. And it rhymes with "rain."
 
 ** Contributing
    We encourage contributions to *Skex* from the community.
 
-1) Fork the *Skex* repository on [https://github.com/xirsys/skex](Github).
+1) Fork the *Skex* repository on [Github](https://github.com/xirsys/skex).
 2) Clone your fork or add the remote if you already have a clone of the repository.
 ```shell
 git clone git@github.com:yourusername/skex.git
