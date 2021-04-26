@@ -4,7 +4,7 @@ defmodule Skex.MixProject do
   def project do
     [
       app: :skex,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.7",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,8 @@ defmodule Skex.MixProject do
       docs: [
         extras: ["README.md"],
         main: "readme"
-      ]
+      ],
+      compilers: [:elixir_make] ++ Mix.compilers()
     ]
   end
 
@@ -28,12 +29,13 @@ defmodule Skex.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
+      {:elixir_make, "~> 0.6.2", runtime: false}
     ]
   end
 
   defp package do
     %{
-      files: ["lib", "mix.exs", "c_src", "README.md"],
+      files: ["lib", "priv", "test", "mix.exs", "c_src", "Makefile", "Dockerfile", "README.md"],
       maintainers: ["Jahred Love"],
       licenses: ["Apache 2.0"],
       links: %{"Github" => "https://github.com/xirsys/skex"}

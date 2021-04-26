@@ -37,7 +37,7 @@ The package can be installed by adding `skex` to your list of dependencies in `m
 ```elixir
 def deps do
   [
-    {:skex, "~> 0.1.1"}
+    {:skex, "~> 0.1.2"}
   ]
 end
 ```

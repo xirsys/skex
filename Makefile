@@ -6,6 +6,15 @@ CFLAGS += -I$(ERLANG_PATH)
 CFLAGS += -fPIC
 CFLAGS += -Ic_src
 
-all:
-	$(CC) $(CFLAGS) -shared $(LDFLAGS) $(SRC) -o priv/skex_nifs.so
 
+all:
+ifeq ($(shell uname), Darwin)
+	$(CC) -fPIC -I $(ERLANG_PATH) -dynamiclib -undefined dynamic_lookup -o priv/skex_nifs.so c_src/*.c
+else
+	$(CC) $(CFLAGS) -shared $(LDFLAGS) $(SRC) -o priv/skex_nifs.so
+endif
+
+.PHONY: clean
+
+clean:
+	rm *.o all
